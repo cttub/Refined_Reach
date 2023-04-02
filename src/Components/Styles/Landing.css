@@ -1,0 +1,70 @@
+#Landing{
+    display: flex;
+    height: 100vh;
+    padding: 1px;
+    background:url('../../Assets/landing.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.top-logo{
+  height: 100px;
+
+}
+.landing-info{
+    backdrop-filter: blur(4px);
+    background-color: rgba(217, 217, 217, 0.48);
+    margin: auto;
+    border: 2px solid black;
+    text-align: center;
+    justify-content: center;
+    padding: 100px;
+    box-shadow: 5px 5px 25px 0 rgba(0,0,0,042.19%);
+}
+.hr-small{
+    display: none;
+}
+.lined-title{
+    position: relative;
+}
+.lined-title:before {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 1px;
+    background: #000;
+    left: 0;
+    top: 50%;
+    position: absolute;
+  }
+  
+  .lined-title:after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 1px;
+    background: #000;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+  @media only screen and (max-width: 1705px){
+    .lined-title:after,.lined-title:before{
+        width: 20%;
+    }
+
+  }
+  @media only screen and (max-width: 1495px){
+    .lined-title:after,.lined-title:before{
+        width: 10%;
+    }
+  }
+  @media only screen and (max-width: 1376px){
+    .hr-small{
+        display: block;
+    }
+  }
+  @media only screen and (max-width: 1376px){
+    .lined-title:after,.lined-title:before{
+        background: transparent;
+    }
+  }

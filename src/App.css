@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+body{
+	background-color: black !important;
+}
+a {
+    color: none !important;
+    text-decoration: none !important;
+}
+.text-link, .navlink{
+    text-decoration: none;
+    font-family: Antic Didone;
+    font-weight: 600;
+    position: relative;	
+	padding: 1.4rem 4.2rem;
+	padding-right: 3.1rem;
+	font-size: 1.4rem;
+	color: black;
+	letter-spacing: .4rem;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+    outline: 1px solid black;
+    outline-offset: -10px;
+   
+}
+
+.text-link:before, .text-link:after, .navlink:before, .navlink:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+}
+.text-link:hover, .navlink:hover {
+    letter-spacing: .5rem;
+    color: white;
+    background-color: black;
+	transition-delay: .2s;
+}
+.text-link:active, .navlink:active{
+    letter-spacing: .4rem;
+    transition-delay: 0s;
+
+} 
+.text-link:hover:before, .navlink:hover:before {
+    
+	transition-delay: 0s;
+}
+
+.text-link:hover:after, .navlink:hover:after {
+	transition-delay: .35s;
+}
+
+.text-link:before{
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: 0;
+	border: 1px solid black;
+	border-left: 0;
+	border-right: 0;
+}
+.text-link:before, .navlink:before {
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: 0;
+	border: 1px solid black;
+	border-left: 0;
+	border-right: 0;
+}
+
+.text-link:after, .navlink::after {
+	bottom: 0;
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.text-link:hover:before, .navlink:hover:before {
+	left: 0;
+	width: 100%;
+}
+.text-link:hover:afte, .navlink:hover::after {
+	top: 0;
+	height: 100%;
+}
+
+button{
+    font-size: 20px !important;
+    font-family: Antic Didone !important;
+    font-weight: 600;
+    position: relative;	
+	padding: 1.4rem 4.2rem;
+	padding-right: 3.1rem;
+	color: var(--inv);
+	letter-spacing: .3rem;
+    border: solid 1px black;
+    padding: 5px 40px 5px 40px;
+    background-color: white;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+}
+button:hover{
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+   
+}
+
+h1,h2,h3, .antic-font, .tabs > a{
+    font-family: Antic Didone;
+    font-style: normal;
+    font-weight: 400;  
+    line-height: 36px;
+}
+h4{
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+}
+h1{
+    font-size: 60px !important;
+}
+h2{
+    font-size: 40px !important;
+}
+h4{
+    font-size: 40px !important;
+}
+
+h3{
+    font-weight: 600 !important;
+    font-size: 25px !important;
+
+}
+p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 30px;
+}
+.gold-border{
+	border: solid 3px #BB8F3A;
+}
+.black-border{
+	border: solid 3px black;
+}
+/*Scroll Button*/
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background-color: black;
+    border-radius: 0px;
+  }
+  #fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background: #BB8F3A !important;
+  }
+  #fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span{
+    height: 17px !important;
+    width: 17px !important;
+  }
+  #fp-nav ul li a span, .fp-slidesNav ul li a span{
+    height: 7px !important;
+    width: 7px !important;
+  }
+  #nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 110px;
+    color: white;
+  }
+
+.logo-tab>img{
+    width: 100px ;
+}
+.logo-tab{
+    transition: .4s;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.logo-tab:hover{
+    transform: scale(1.2);
+}
+.logo-tab:active{
+    transform: scale(1);
+}
+.tabs {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    float: right;
+    width: 100%; /* Add a width to the tabs element */
+    justify-content: flex-end; /* Align the tabs to the right side */
+}
+  
+.tabs > a{
+    font-size: 30px;
+    margin-right: 20px;
+    
+}
+.navlink{
+    color: black;
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,042.19%);
+    backdrop-filter: blur(4px);
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    overflow: clip;
+    padding: 15px;
+    text-decoration: none;
+}
+.navlink:hover{
+    color: white !important;
+}
+.navlink:active{
+    box-shadow: 0px 0px 25px 0 rgba(0,0,0,042.19%);
+}
+
+.mobile-nav{
+    z-index: 10;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    float: right;
+    padding: 4px 4px 1px 4px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.fp-watermark{
+    display: none;
+}
+@media (max-width: 767px){
+    h1{
+        font-size: 46px !important;
+    }
+    h2{
+        font-size: 20px !important;
+    }
+    h4{
+        font-size: 30px !important;
+    }
+    
+    h3{
+        font-size: 25px !important;
+    
+    }
+    p{
+        font-size: 20px;
+    }
+
+}
+.white-txt{
+    color: white;
+}
+.white-line{
+    border-bottom: solid 3px white;
+}

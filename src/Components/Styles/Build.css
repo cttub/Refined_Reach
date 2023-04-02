@@ -1,0 +1,48 @@
+#build{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: clip;
+}
+.card-section{
+    display: flex;
+    margin-top: 10vh;
+}
+.first-card, .second-card, .third-card{
+    margin: auto;
+    height: 80vh;
+    border-radius: 0px;
+}
+.second-card{
+    overflow-y: auto;
+    padding: 120px 30px 10px 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+.logo-image{
+    display: flex;
+    justify-content: center;
+}
+
+.bar-logo{
+    width: 15%;
+    margin-bottom: 20px;
+}
+.logo{
+    width: 20%;
+}
+.first-card{
+    background: url("../../Assets/discussion.jpg");
+    background-size: cover;
+    background-position: center;
+    border-left: none;
+    margin-left: 0px;
+}
+.third-card{
+    background: url("../../Assets/meeting.jpg");
+    background-size: cover;
+    background-position: center;
+    border-right: none;
+    margin-right: 0px;
+}

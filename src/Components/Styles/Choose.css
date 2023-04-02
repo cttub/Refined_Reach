@@ -1,0 +1,33 @@
+#choose{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: url("../../Assets/hands.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.choose-container{
+    overflow-y: auto;
+    text-align: center;
+    padding: 50px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(217, 217, 217, 0.90);
+    margin: auto;
+    box-shadow: 5px 5px 25px 0 rgba(0,0,0,042.19%);
+    height: 60vh;
+}
+.flow{
+    padding-top: 40px;
+}
+.flow > h4{
+    margin: auto;
+}
+.flow > img{
+    width: 20%;
+}
+.choose-container > p{
+    margin-top: 30px;
+    padding: 30px;
+}
